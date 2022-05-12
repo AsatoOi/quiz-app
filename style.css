@@ -2,11 +2,17 @@ body {
   background: #efdec1;
   font-size: 14px;
   font-family: Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
+.flex {
+  display: block;
+}
 .container {
   width: 400px;
-  margin: 8px auto;
+  margin: auto;
   background: #fff;
   border-radius: 4px;
   padding: 16px;
@@ -44,7 +50,7 @@ body {
 }
 
 #choices > li.correct::after {
-  content: ' ... correct!';
+  content: " ... correct!";
 }
 
 #choices > li.wrong {
@@ -55,10 +61,11 @@ body {
 }
 
 #choices > li.wrong::after {
-  content: ' ... wrong!';
+  content: " ... wrong!";
 }
 
-#btn, #result > a {
+#btn,
+#result > a {
   background: #3498db;
   padding: 8px;
   border-radius: 4px;
@@ -90,7 +97,7 @@ body {
 }
 
 #result.hidden {
-  transform: translateY(-500px);
+  transform: translateY(-1000px);
 }
 
 #result > p {
